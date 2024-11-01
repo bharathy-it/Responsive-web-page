@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d38ca3a04.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div>
+                    <img src="logo.png" alt="Logo" class="logo" />
+                    <div class="menu">
+                        <ul>
+                        <li>
+                            <a href="#">New Release</a>
+                        </li>
+                        <li>
+                            <a href="#">Men</a>
+                        </li>
+                        <li>
+                            <a href="#">Women</a>
+                        </li>
+                        <li>
+                            <a href="#">Kids</a>
+                        </li>
+                        <li>
+                            <a href="#">Categories</a>
+                        </li>
+                    </ul>
+                    <form>
+                        <div class="search-icon">
+                            <i class="fas fas fa-search"></i>
+                        </div>
+                        <input type="text" class="search" placeholder="search..." />
+                        <button class="nav-btn">
+                            <i class="fas fa-cart-plus"></i>
+                        </button>
+                    </form>
+                    </div>
+                </div>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="body">
+            <div>
+                <h4>$47.97</h4>
+                <h1>Nike SuperRep Go</h1>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>
+                    The Nike SuperRep Go combines comfortable foam cushioning, flexibility and support to get you moving in circuit- based fitness classes or while streaming workouts at home
+                </p>
+                <a href="#" class="btn">Add To Cart</a>
+            </div>
+            <div>
+                <img src="shoe.png" alt="Nike SuperRep Go">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="watch">
+                <div class="play-icon">
+                    <i class="fas fas fa-play"></i>
+                </div>
+                <h3>Preview</h3>
+            </div>
+        </div>
+    </header>
+    <script>
+        const menu=document.querySelector(".menu");
+        const menuBtn=document.querySelector(".menu-btn");
+        //Open or Close menu Functionality
+
+        menuBtn.addEventListener("click", () =>{
+            menu.classList.toggle('nav-toggle');
+        });
+    </script>
+</body>
+</html>
